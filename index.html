@@ -4,101 +4,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="icofont/icofont.min.css">
-    <style type="text/css">
-
-header {
-  max-height: 20em;
-  height: 20em;
-  justify-content: center;
-}
-
-nav {
-  background-color: #0e131f;
-  color: #f7f7ff;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  background-color: #f7f7ff;
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
-}
-
-body > * {
-  margin: 0;
-  padding: 0;
-}
-
-.horizontal {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  justify-content: space-between;
-  margin: 0 auto;
-}
-
-.horizontal > * {
-  flex: 1;
-}
-
-.grow {
-  flex-grow: 1;
-}
-
-#hero {
-  background-color: #c03221;
-}
-
-.center-contents {
-  text-align: center;
-}
-
-.constrain-width {
-  max-width: 50em;
-}
-
-.constrain-half-width {
-  max-width: 80em;
-}
-
-.logo {
-  margin: 2em;
-  object-fit: contain;
-  flex: 0;
-}
-
-.padded {
-  padding-top: 3em !important;
-  padding-bottom: 3em !important;
-}
-
-#info > h1 {
-  font-size: 38pt;
-}
-
-.icon {
-  font-size: 40px;
-  margin-bottom: 1em;
-}
-
-.feature > a {
-  font-size: larger;
-}
-
-    </style>
+<link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <nav>
+    <nav class="horizontal">
       <h1>Wingman</h1>
-      <ul>
-        <li>Support</li>
-        <li>Download</li>
+      <ul >
+        <li><button>Donate</button></li>
+        <li><button>Download</button></li>
       </ul>
     </nav>
     <header class="padded">
@@ -108,7 +21,7 @@ body > * {
           <h1>Wingman for Haskell</h1>
           <h2>Focus on the important stuff; delegate the rest</h2>
           <span class="desc">Wingman writes the boring, auxiliary code, so you don't have to. Generate functions from type signatures, and intelligently complete holes.</span>
-          <div class="actions">
+          <div class="actions align-right">
             <button>Download</button>
             <button>Buy</button>
           </div>
@@ -117,35 +30,41 @@ body > * {
     </header>
     <div class="grow padded center-contents" id="hero">
       <h1>Wingman is currently in beta</h1>
-      <span>Pledge on Patreon to support the project, and get access to cutting edge features.</span>
+      <span>Pledge on Patreon to support the project, and get access to cutting-edge features.</span>
     </div>
     <div class="padded horizontal constrain-half-width center-contents" id="features">
       <div class="feature">
         <div class="icon">
           <i class="icofont-align-left"></i>
         </div>
-        <a>Type-Aware Code Generation</a>
+        <a class="bigger centered bold">Type-Aware Code Generation</a>
         <p>
-        lorem ipsum
+        Fill typed holes with ease. Generate idiomatic Haskell solutions using
+        pattern matching, class methods and even recursion.
         </p>
+        <a href="#">See it in action</a>
       </div>
       <div class="feature">
         <div class="icon">
           <i class="icofont-chart-flow"></i>
         </div>
-        <a>Case Splitting</a>
+        <a class="bigger centered bold">Case Splitting</a>
         <p>
-        lorem ipsum
+        Introduce complete case statements for any variable in scope.
+        Automatically expand top-level splits into multiple equations.
         </p>
+        <a href="#">See it in action</a>
       </div>
       <div class="feature">
         <div class="icon">
           <i class="icofont-brainstorming"></i>
         </div>
-        <a>Intelligent Next Actions</a>
+        <a class="bigger centered bold">Intelligent Next Actions</a>
         <p>
-        lorem ipsum
+        For those times Wingman can't read your mind. Ask its help in
+        introducing variables and constructing datatypes.
         </p>
+        <a href="#">See it in action</a>
       </div>
     </div>
     <div id="cta"></div>
