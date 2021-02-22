@@ -5,8 +5,6 @@ header {
 nav {
   background-color: #0e131f;
   color: #f7f7ff;
-  padding-top: 0.5em !important;
-  padding-bottom: 0.5em !important;
 }
 
 nav > h1 {
@@ -106,8 +104,8 @@ button {
 }
 
 .padded {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
+  padding-top: 2.8rem !important;
+  padding-bottom: 2.8rem !important;
 }
 
 #info > h1 {
@@ -198,6 +196,10 @@ a[href] {
 }
 
 .faded {
+}
+
+.actions {
+  margin-top: 1rem;
 }
 
 .actions > * {
