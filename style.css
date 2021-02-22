@@ -1,6 +1,4 @@
 header {
-  max-height: 20em;
-  height: 20em;
   justify-content: center;
 }
 
@@ -24,6 +22,11 @@ nav ul {
 nav li {
   display: inline;
   font-size: 11pt;
+  margin-right: 1rem;
+}
+
+nav a {
+  color: #f7f7ff !important;
 }
 
 body {
@@ -63,6 +66,12 @@ body > * {
 #hero {
   background-color: #c03221;
   color: #f7f7ff;
+  font-weight: bold;
+}
+
+#hero a {
+  color: #f7f7ff;
+  text-decoration: underline;
 }
 
 button {
@@ -75,15 +84,23 @@ button {
 }
 
 .constrain-width {
-  max-width: 40%;
+  max-width: 770px;
 }
 
 .constrain-half-width {
-  max-width: 60%;
+  max-width: 1200px;
+}
+
+@media only screen and (max-width: 1345px) {
+
+  .constrain-half-width {
+    max-width: 100% !important;
+  }
 }
 
 .logo {
   margin: 2rem;
+  max-height: 16rem;
   object-fit: contain;
   flex: 0;
 }
@@ -98,9 +115,16 @@ button {
 }
 
 .icon {
-  font-size: 36pt;
+  font-size: 28pt;
   margin-bottom: 1rem;
   text-align: center;
+}
+
+.icon > i {
+  padding: 0.8rem;
+  background-color: #FCDC4D;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .feature {
@@ -139,10 +163,45 @@ button {
   font-weight: bold;
 }
 
-a {
+a[href] {
   color: #1F7A8C;
   font-weight: bold;
   text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.small-btn {
+  font-size: 0.8rem !important;
+  padding: .285rem .375rem !important;
+}
+
+.main {
+  background-color: #FCDC4D;
+  color: #212529 !important;
+}
+
+.faded {
+}
+
+.actions > * {
+  margin-right: 1em;
 }
 
 

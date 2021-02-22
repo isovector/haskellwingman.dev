@@ -1,24 +1,24 @@
 <html>
   <head>
     <title>Wingman for Haskell</title>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="icofont/icofont.min.css">
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="icofont/icofont.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <nav class="horizontal">
-      <h1>Wingman</h1>
+      <h1>Wingman for Haskell</h1>
       <ul >
-        <li><button>Donate</button></li>
-        <li><button>Download</button></li>
+        <li><a class="small-btn btn faded" href="https://www.patreon.com/wingman_for_haskell">Become a Patron</a></li>
+        <li><a class="small-btn btn main" href="https://github.com/haskell/haskell-language-server/releases">Download</a></li>
       </ul>
     </nav>
     <header class="padded">
@@ -29,22 +29,22 @@
           <h2>Focus on the important stuff; delegate the rest</h2>
           <span class="desc">Wingman writes the boring, auxiliary code, so you don't have to. Generate functions from type signatures, and intelligently complete holes.</span>
           <div class="actions align-right">
-            <button>Download</button>
-            <button>Buy</button>
+            <a class="btn faded" href="https://www.patreon.com/wingman_for_haskell">Become a Patron</a>
+            <a class="btn main" href="https://github.com/haskell/haskell-language-server/releases">Download</a>
           </div>
         </div>
       </div>
     </header>
     <div class="grow padded center-contents" id="hero">
       <h1>Wingman is currently in beta</h1>
-      <span>Pledge on Patreon to support the project, and get access to cutting-edge features.</span>
+      <span><a href="https://www.patreon.com/wingman_for_haskell">Pledge on Patreon</a> to support the project and get access to cutting-edge features.</span>
     </div>
     <div class="padded horizontal constrain-half-width center-contents" id="features">
       <div class="feature">
         <div class="icon">
           <i class="icofont-align-left"></i>
         </div>
-        <a class="bigger centered bold">Type-Aware Code Generation</a>
+        <span class="bigger centered bold">Type-Aware Code Generation</span>
         <p>
         Fill typed holes with ease. Generate idiomatic Haskell solutions using
         pattern matching, class methods and even recursion.
@@ -55,7 +55,7 @@
         <div class="icon">
           <i class="icofont-chart-flow"></i>
         </div>
-        <a class="bigger centered bold">Case Splitting</a>
+        <span class="bigger centered bold">Case Splitting</span>
         <p>
         Introduce complete case statements for any variable in scope.
         Automatically expand top-level splits into multiple equations.
@@ -66,7 +66,7 @@
         <div class="icon">
           <i class="icofont-brainstorming"></i>
         </div>
-        <a class="bigger centered bold">Intelligent Next Actions</a>
+        <span class="bigger centered bold">Intelligent Next Actions</span>
         <p>
         For those times Wingman can't read your mind. Ask its help in
         introducing variables and constructing datatypes.
