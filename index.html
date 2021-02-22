@@ -49,7 +49,7 @@
         Fill typed holes with ease. Generate idiomatic Haskell solutions using
         pattern matching, class methods and even recursion.
         </p>
-        <a href="#">See it in action</a>
+        <a href="#" onclick="openModal('foldr.gif')">See it in action</a>
       </div>
       <div class="feature">
         <div class="icon">
@@ -60,7 +60,7 @@
         Introduce complete case statements for any variable in scope.
         Automatically expand top-level splits into multiple equations.
         </p>
-        <a href="#">See it in action</a>
+        <a href="#" onclick="openModal('case-split.gif')">See it in action</a>
       </div>
       <div class="feature">
         <div class="icon">
@@ -71,9 +71,37 @@
         For those times Wingman can't read your mind. Ask its help in
         introducing variables and constructing datatypes.
         </p>
-        <a href="#">See it in action</a>
+        <!-- <a href="#" onclick="openModal('intros.gif')">See it in action</a> -->
       </div>
     </div>
     <div id="cta"></div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <img id="actionGif">
+      </div>
+    </div>
+
+    <script type="text/javascript">
+var modal = document.getElementById("modal");
+var actionGif = document.getElementById("actionGif");
+
+function openModal(gif) {
+  modal.style.display = "flex";
+  actionGif.src = gif
+}
+
+function closeModal() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    closeModal()
+  }
+}
+    </script>
+
   </body>
 </html>
