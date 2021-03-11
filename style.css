@@ -150,6 +150,8 @@ button {
 .centered {
   text-align: center !important;
   display: block;
+  margin: 0 auto;
+  width: 100%;
 }
 
 button {
@@ -231,4 +233,18 @@ a[href] {
 .modal-content img {
   margin: 0 auto;
 }
+
+#about {
+  background-color: #0e131f;
+  color: #f7f7ff;
+}
+
+.left-paragraphs p {
+  text-align: left;
+}
+
+code {
+  font-size: 12pt;
+}
+
 
