@@ -116,11 +116,82 @@
       </div>
     </div>
 
+    <div class="padded center-contents centered" id="faq">
+      <div class="constrain-width left-paragraphs centered">
+      <h1>Frequently Asked Questions</h1>
+
+      <h2>Sounds great, but how do I get started?</h2>
+
+      <p>Make sure you have the Haskell Language Server installed, then try
+        writing out the following:</p>
+
+<pre>my_foldr :: (a -> b -> b) -> b -> [a] -> b
+my_foldr = _</pre>
+
+      <p>Simply hover over the <code>_</code> and run the <code>Attempt to fill
+        hole</code> code action (under <span class="inline-icon"><i
+          class="icofont-light-bulb"></i></span> in VSCode.) Prepare to be
+        amazed.</p>
+
+
+      <h2>What can Wingman do?</h2>
+
+      <p><span class="code-action">Attempt to fill hole</span> &mdash;
+        try to synthesize a complete solution to the current hole. Fails if it
+        can only make partial progress.</p>
+      <p><span class="code-action">Case split on</span> &mdash; pattern match on
+        a local variable. Comes in many varieties, for creating homomorphisms and
+        working with <code>-XLambdaCase</code>.</p>
+      <p><span class="code-action">Introduce lambda</span> &mdash;
+        add a lambda abstraction, binding every function argument.</p>
+      <p><span class="code-action"><span class="beta"></span>Refine hole</span> &mdash;
+        make one step in the "obvious direction." Introduces a lambda or uses
+        a data constructor if it's the only one that can match.</p>
+      <p><span class="code-action"><span class="beta"></span>Split all function arguments</span></span> &mdash;
+        make a function head for every possible combination of its arguments.</p>
+      <p><span class="code-action"><span class="beta"></span>Use constructor</span></span> &mdash;
+        use the specified constructor, adding new holes for each argument.</p>
+
+
+      <h2>What's the difference between Wingman and HLS?</h2>
+
+      <p>The Haskell Language Server is best thought of as a platform for
+        writing specific tools. It provides a bridge between the editor and the
+        compiler, and ensures that build artifacts are up to date.</p>
+
+      <p>Wingman is built on top of HLS, and that's the reason it doesn't
+        require dedicated editor support. We're bundled together in the spirit
+        of symbiosis and convenience &mdash; Wingman provides some features
+        otherwise lacking in HLS, but also wouldn't be possible
+        <em>without</em> HLS.</p>
+
+
+      <h2>Is this different than hls-tactics-plugin?</h2>
+
+      <p>No, just better branding.</p>
+
+      <p>Internally, the project is still known as
+        <code>hls-tactics-plugin</code>, due to its intentions to be tactic
+        meta-programming tool for Haskell. On the inside, Wingman makes heavy
+        use of Reed Mullanix's excellent <a
+          href="https://hackage.haskell.org/package/refinery">refinery</a>
+        tactic library for doing its code synthesis.</p>
+
+      <p>Maybe one day we'll get to tactic meta-programming. But for now, this
+        is just an implementation detail, and <code>hls-tactics-plugin</code>
+        isn't exactly a name that inspires enthusiasm.</p>
+      </div>
+    </div>
+
     <div id="modal" class="modal">
       <div class="modal-content">
         <img id="actionGif">
       </div>
     </div>
+
+    <footer class="horizontal padded centered">
+      Built with love by Sandy Maguire. &copy; 2020-2021
+    </footer>
 
     <script type="text/javascript">
 var modal = document.getElementById("modal");
